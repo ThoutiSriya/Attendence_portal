@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <form action="/Facsave" method="post">
+            {% csrf_token %}
+            name: <input type="text" name="name" class="form-control"><br>
+            email: <input type="email" name="email" class="form-control"><br>
+            password: <input type="text" name="pass1" class="form-control"><br>
+            fac: <input type="radio" name="type1" class="form-control" value="f">
+            stu: <input type="radio" name="type1" class="form-control" value="s">
+            <button type="submit">Signup</button>
+        </form>
+    </body>
+</html>
