@@ -30,6 +30,7 @@ urlpatterns = [
     path('detecting', views.detecting, name='detecting'),
     path('viewing', views.viewing, name='viewing')
 ]
-
+urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 # path('login', views.LoginfPage, name='login'),
 # path('saveform', views.save_form, name='saveform'),
